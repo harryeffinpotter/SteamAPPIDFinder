@@ -1,0 +1,44 @@
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\bin\Release\APPID.exe.config
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\bin\Release\APPID.exe
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\bin\Release\APPID.pdb
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\bin\Release\Newtonsoft.Json.dll
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\bin\Release\Newtonsoft.Json.xml
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\APPID.Properties.Resources.resources
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.GenerateResource.cache
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CopyComplete
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\APPID.exe
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\APPID.pdb
+C:\Users\Oscar\Desktop\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.AssemblyReference.cache
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\bin\Release\APPID.exe.config
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\bin\Release\APPID.exe
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\bin\Release\Newtonsoft.Json.dll
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\bin\Release\Newtonsoft.Json.xml
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\APPID.Properties.Resources.resources
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.GenerateResource.cache
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\APPID.exe
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CopyComplete
+C:\Users\Oscar\Desktop\DEKSKTOP SHIT LOCAL\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\bin\Release\APPID.exe.config
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\bin\Release\APPID.exe
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\APPID.Properties.Resources.resources
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.GenerateResource.cache
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\SteamAppIdIdentifier.csproj.CopyComplete
+C:\Users\Oscar\source\repos\SteamAppIdIdentifier\obj\Release\APPID.exe
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.csproj.AssemblyReference.cache
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\APPID.Properties.Resources.resources
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.csproj.GenerateResource.cache
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\APPID.exe
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\bin\Release\APPID.exe.config
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\bin\Release\APPID.exe
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\bin\Release\Newtonsoft.Json.dll
+C:\Users\Oscar\source\repos\FFA-HFP APPID-FINDER Source\obj\Release\SteamAppIdIdentifier.csproj.CopyComplete

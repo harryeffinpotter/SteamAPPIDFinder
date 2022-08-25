@@ -1,0 +1,26 @@
+C:\Users\Jane Doe\source\repos\HFP's APPID\bin\Debug\APPID.exe.config
+C:\Users\Jane Doe\source\repos\HFP's APPID\bin\Debug\APPID.exe
+C:\Users\Jane Doe\source\repos\HFP's APPID\bin\Debug\APPID.pdb
+C:\Users\Jane Doe\source\repos\HFP's APPID\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.AssemblyReference.cache
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\APPID.Properties.Resources.resources
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.GenerateResource.cache
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.CoreCompileInputs.cache
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.CopyComplete
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\APPID.exe
+C:\Users\Jane Doe\source\repos\HFP's APPID\obj\Debug\APPID.pdb
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\bin\Debug\APPID.exe.config
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\bin\Debug\APPID.exe
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\bin\Debug\APPID.pdb
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.AssemblyReference.cache
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\APPID.Properties.Resources.resources
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.GenerateResource.cache
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.CoreCompileInputs.cache
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.CopyComplete
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\APPID.exe
+C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\APPID.pdb
