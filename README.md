@@ -1,2 +1,8 @@
 # SteamAPPIDFinder
-Steam APPID finder with multiple one-click options.
+Steam APPID Finder with multiple one-click options.
+
+I created Steam APPID Finder to interface with my SteamAutoCrack mod, which can be found in my SACM repo. It is made with 2 key feautres in mind.
+- Accepts CLI arguments.
+- Has multiple ways to copy APPID then close itself.
+
+Contributions welcome!
