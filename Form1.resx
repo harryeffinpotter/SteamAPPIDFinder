@@ -208,13 +208,13 @@
     <value>9, 272</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 105</value>
+    <value>380, 105</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>IF USING HFP's-SAC do one of the following to copy APPID + exit to script:
+    <value>IF USING SACM do one of the following to copy APPID + exit to script:
 Double click item.
 Click green header.
 Select item and press enter.
@@ -5927,7 +5927,7 @@ Click to goto FFA's Telegram/Discord!</value>
     <value>On</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Harry Effin Potter's APP ID Finder</value>
+    <value>HarryEffinPotter's Steam APPID Finder</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SteamAppId</value>
