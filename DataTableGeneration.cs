@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SteamAppIdIdentifier
@@ -17,7 +18,11 @@ namespace SteamAppIdIdentifier
         public static DataTable dt;
 
         public DataTableGeneration() { }
-
+        public static string RemoveSpecialCharacters(string str)
+        {
+            str = str.Replace(":", " -").Replace("'", "").Replace("&", "and");
+            return Regex.Replace(str, "[^a-zA-Z0-9._0 -]+", "", RegexOptions.Compiled);
+        }
         public async Task<DataTable> GetDataTableAsync(DataTableGeneration dataTableGeneration) {
             HttpClient httpClient = new HttpClient();
             string content = await httpClient.GetStringAsync("https://api.steampowered.com/ISteamApps/GetAppList/v2/");
@@ -29,7 +34,8 @@ namespace SteamAppIdIdentifier
 
             foreach (var item in steamGames.Applist.Apps)
             {
-                dt.Rows.Add(item.Name, item.Appid);
+                string ItemWithoutTroubles = RemoveSpecialCharacters(item.Name);
+                dt.Rows.Add(ItemWithoutTroubles, item.Appid);
             }
 
             dataTableGeneration.DataTableToGenerate = dt;

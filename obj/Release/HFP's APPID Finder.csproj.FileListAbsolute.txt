@@ -32,7 +32,6 @@ C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Release\HFP's AP
 C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Release\APPID.exe
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\APPID.exe.config
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\APPID.exe
-C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.dll
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.AssemblyReference.cache
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
@@ -41,3 +40,19 @@ C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\HFP
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CoreCompileInputs.cache
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CopyComplete
 C:\Users\Jane Doe\Source\Repos\harryeffinpotter\SteamAPPIDFinder\obj\Release\APPID.exe
+C:\Users\Jane Doe\source\repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\Costura.Fody.dll
+C:\Users\Jane Doe\source\repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.dll
+C:\Users\Jane Doe\source\repos\harryeffinpotter\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.AssemblyReference.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\APPID.Properties.Resources.resources
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.GenerateResource.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CoreCompileInputs.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\APPID.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Costura.Fody.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\APPID.exe.config
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\APPID.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CopyComplete

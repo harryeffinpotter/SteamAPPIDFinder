@@ -24,3 +24,18 @@ C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPI
 C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\HFP's APPID Finder.csproj.CopyComplete
 C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\APPID.exe
 C:\Users\Jane Doe\source\repos\harryeffinpotter\HFP's APPID\obj\Debug\APPID.pdb
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Costura.Fody.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.exe.config
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.pdb
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.AssemblyReference.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\SteamAppIdIdentifier.SteamAppId.resources
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\APPID.Properties.Resources.resources
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.GenerateResource.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.CoreCompileInputs.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.CopyComplete
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\APPID.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\APPID.pdb
