@@ -122,14 +122,14 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="searchTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 12</value>
+    <value>12, 9</value>
   </data>
   <data name="searchTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>525, 22</value>
+    <value>564, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="searchTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;searchTextBox.Name" xml:space="preserve">
     <value>searchTextBox</value>
@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;searchTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="dataGridView1.ColumnHeadersHeight" type="System.Int32, mscorlib">
     <value>29</value>
@@ -150,13 +150,13 @@
     <value>12, 40</value>
   </data>
   <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>35</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>653, 229</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
     <value>dataGridView1</value>
@@ -168,23 +168,26 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="btnSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>542, 12</value>
+    <value>582, 9</value>
   </data>
   <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 22</value>
+    <value>83, 22</value>
   </data>
   <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="btnSearch.Text" xml:space="preserve">
-    <value>Search</value>
+    <value>Clear (ESC)</value>
   </data>
   <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
     <value>btnSearch</value>
@@ -196,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -205,23 +208,19 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 272</value>
+    <value>10, 273</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 105</value>
+    <value>166, 60</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>IF USING SACM do one of the following to copy APPID + exit to script:
-Double click item.
-Click green header.
-Select item and press enter.
-
-Exit app: Esc
-
-</value>
+    <value>To copy APPID + exit:
+- Double click item.
+- Click green header.
+- Select item and press enter.</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -233,32 +232,32 @@ Exit app: Esc
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="label2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 332</value>
+    <value>461, 335</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 30</value>
+    <value>203, 30</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>by HFP/KillinMeSmalls 
-Click to goto FFA's Telegram/Discord!</value>
+    <value>by HFP/KillinMeSmalls of FFA
+Click here for our Telegram/Discord!</value>
   </data>
   <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -273,7 +272,7 @@ Click to goto FFA's Telegram/Discord!</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -288,7 +287,7 @@ Click to goto FFA's Telegram/Discord!</value>
     <value>244, 60</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>No APPID copied yet...</value>
@@ -306,7 +305,109 @@ Click to goto FFA's Telegram/Discord!</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 335</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 272</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Select to copy APPID</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

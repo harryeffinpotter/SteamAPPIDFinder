@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -20,77 +21,64 @@ namespace SteamAppIdIdentifier
             Task.Run(async () => await dataTableGeneration.GetDataTableAsync(dataTableGeneration)).Wait();
             InitializeComponent();
         }
-        static string BetterReplace(string originalString, string oldValue, string newValue)
-        {
-            Regex regEx = new Regex(oldValue,
-            RegexOptions.IgnoreCase | RegexOptions.Multiline);
-            return regEx.Replace(originalString, newValue);
-        }
+
+        public static bool VRLExists = false;
         public static string RemoveSpecialCharacters(string str)
         {
             return Regex.Replace(str, "[^a-zA-Z0-9._0-]+", " ", RegexOptions.Compiled);
         }
         private void SteamAppId_Load(object sender, EventArgs e)
         {
+            if (Directory.Exists($"{APPDATA}\\VRL"))
+            {
+                VRLExists = true;
+            }
 
-            searchTextBox.Text = "         ";
+            this.TopMost = true;
             string args3;
             dataGridView1.DataSource = dataTableGeneration.DataTableToGenerate;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dataGridView1.MultiSelect = false;
             string args2 = "";
-            dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            dataGridView1.Columns[0].Width = 550;
-            foreach (string args1 in Program.args2)
-            {
-                args3 = RemoveSpecialCharacters(args1);
-                args2 += args3 + " ";
-            }
-            try
-            {
-                string Search = RemoveSpecialCharacters(args2.ToLower()).Trim();
-                ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace("and", "").Replace("the", "").Replace(":", "") + "%'"); if (dataGridView1.Rows[0].Cells[1].Value.ToString() != null)
-                    if (!String.IsNullOrEmpty(dataGridView1.Rows[0].Cells[1].Value.ToString()))
-                        Clipboard.SetText($"{dataGridView1.Rows[0].Cells[1].Value.ToString()}");
-                if (String.IsNullOrWhiteSpace(dataGridView1.Rows[0].Cells[1].Value.ToString()))
-                {
-                    dataTableGeneration = new DataTableGeneration();
-                    Task.Run(async () => await dataTableGeneration.GetDataTableAsync(dataTableGeneration)).Wait();
-                    dataGridView1.DataSource = dataTableGeneration.DataTableToGenerate;
+            dataGridView1.Columns[0].Width = 540;
 
+
+            if (args2 != null)
+            {
+                foreach (string args1 in Program.args2)
+                {
+                    args3 = RemoveSpecialCharacters(args1);
+                    args2 += args3 + " ";
                 }
+                try
+                {
+                    string Search = RemoveSpecialCharacters(args2.ToLower());
+                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace(" and ", " ").Replace(" the ", " ").Replace(":", "") + "%'"); if (dataGridView1.Rows[0].Cells[1].Value.ToString() != null)
+                        if (!String.IsNullOrEmpty(dataGridView1.Rows[0].Cells[1].Value.ToString()))
+                            Clipboard.SetText($"{dataGridView1.Rows[0].Cells[1].Value.ToString()}");
+                    if (String.IsNullOrWhiteSpace(dataGridView1.Rows[0].Cells[1].Value.ToString()))
+                    {
+                        dataTableGeneration = new DataTableGeneration();
+                        Task.Run(async () => await dataTableGeneration.GetDataTableAsync(dataTableGeneration)).Wait();
+                        dataGridView1.DataSource = dataTableGeneration.DataTableToGenerate;
+
+                    }
+                }
+                catch { }
+                searchTextBox.Text = "";
+
             }
-            catch { }
-            searchTextBox.Text = "";
             dataGridView1.Columns[0].SortMode = DataGridViewColumnSortMode.NotSortable;
             dataGridView1.Columns[1].SortMode = DataGridViewColumnSortMode.NotSortable;
+            dataGridView1.ClearSelection();
+            dataGridView1.DefaultCellStyle.SelectionBackColor = dataGridView1.DefaultCellStyle.BackColor;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = dataGridView1.DefaultCellStyle.ForeColor;
         }
 
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dataTableGeneration = new DataTableGeneration();
-            Task.Run(async () => await dataTableGeneration.GetDataTableAsync(dataTableGeneration)).Wait();
-            dataGridView1.DataSource = dataTableGeneration.DataTableToGenerate;
-
-            if (dataGridView1.Rows.Count > 1)
-            {
-                dataGridView1.CurrentCell = this.dataGridView1[1, 1];
-                try
-                {
-                    string Search = RemoveSpecialCharacters(searchTextBox.Text.ToLower()).Trim();
-                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace("and", "").Replace("the", "").Replace(":", "") + "%'");
-
-                    if (dataGridView1.Rows[0].Cells[1].Value.ToString() != null)
-                        Clipboard.SetText(dataGridView1.Rows[1].Cells[1].Value.ToString());
-
-
-                    CurrentCell = 0;
-                }
-                catch
-                {
-                }
-            }
+            searchTextBox.Clear();
+            searchTextBox.Focus();
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -103,8 +91,11 @@ namespace SteamAppIdIdentifier
                 if (dataGridView1.SelectedCells.Count > 0)
                 {
                     Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
-                    string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString()).Trim();
-					File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt",PropName);
+                    if (VRLExists)
+                    {
+                        string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString()).Trim();
+                        File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                    }
                     label3.Text = $"{dataGridView1[1, e.RowIndex].Value.ToString()} ({dataGridView1[0, e.RowIndex].Value.ToString()}) copied to clipboard.";
                     CurrentCell = e.RowIndex;
                 }
@@ -121,9 +112,9 @@ namespace SteamAppIdIdentifier
             {
                 if (searchTextBox.Text.Length > 0)
                 {
-                    searchTextBox.Text = "";
+                    searchTextBox.Clear();
+                    searchTextBox.Focus();
                 }
-                this.Close();
                 return true;
             }
             return base.ProcessDialogKey(keyData);
@@ -137,18 +128,32 @@ namespace SteamAppIdIdentifier
             }
             try
             {
-                string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
-                File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                if (VRLExists)
+                {
+                    string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
+                    File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                }
                 Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
+                this.Close();
             }
             catch { }
-            Application.Exit();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-
+            try
+            {
+                if (VRLExists)
+                {
+                    string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
+                    File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                }
+                Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
+            }
+            catch
+            {
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -160,37 +165,55 @@ namespace SteamAppIdIdentifier
 
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (dataGridView1[1, CurrentCell].Value == null)
+
+            if (dataGridView1.Rows[0].Selected)
             {
-                return;
+                if (e.KeyCode == Keys.Up)
+                {
+                    searchTextBox.Clear();
+                    searchTextBox.Focus();
+                }
             }
             if (e.KeyCode == Keys.Escape)
             {
-                this.Close();
+                searchTextBox.Clear();
+                searchTextBox.Focus();
             }
             if (e.KeyCode == Keys.Enter)
             {
-                string PropName = RemoveSpecialCharacters(dataGridView1[0, CurrentCell].Value.ToString());
-                File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                if (dataGridView1[1, CurrentCell].Value == null)
+                {
+                    return;
+                }
+                if (VRLExists)
+                {
+                    string PropName = RemoveSpecialCharacters(dataGridView1[0, CurrentCell].Value.ToString());
+                    File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                }
                 Clipboard.SetText(dataGridView1[1, CurrentCell].Value.ToString());
                 this.Close();
             }
-            
         }
         private void dataGridView1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (dataGridView1[1, CurrentCell].Value == null)
-            {
-                return;
-            }
+
             if (e.KeyChar == (char)Keys.Escape)
             {
-                this.Close();
+                searchTextBox.Clear();
+                searchTextBox.Focus();
             }
             if (e.KeyChar == (char)Keys.Enter)
             {
-                string PropName = RemoveSpecialCharacters(dataGridView1[0, CurrentCell].Value.ToString());
-                File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                if (dataGridView1[1, CurrentCell].Value == null)
+                {
+                    return;
+                }
+
+                if (VRLExists)
+                {
+                    string PropName = RemoveSpecialCharacters(dataGridView1[0, CurrentCell].Value.ToString());
+                    File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+                }
                 Clipboard.SetText(dataGridView1[1, CurrentCell].Value.ToString());
                 this.Close();
             }
@@ -199,13 +222,21 @@ namespace SteamAppIdIdentifier
         {
             try
             {
+                if (e.KeyCode == Keys.Down)
+                {
+                    dataGridView1.Focus();
+                    e.SuppressKeyPress = true;
+                }
                 if (e.KeyCode == Keys.Enter)
                 {
-                    if (searchTextBox.Text.Length > 0)
-                    {
-                        btnSearch_Click(sender, e);
-                        searchTextBox.Clear();
-                    }
+                    dataGridView1.Focus();
+                    e.SuppressKeyPress = true;
+                }
+                if (e.KeyCode == Keys.Escape)
+                {
+                    searchTextBox.Clear();
+                    searchTextBox.Focus();
+                    e.SuppressKeyPress = true;
                 }
             }
             catch { }
@@ -215,18 +246,66 @@ namespace SteamAppIdIdentifier
         {
             try
             {
-                string Search = RemoveSpecialCharacters(searchTextBox.Text.ToLower());
-                ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace("and", "").Replace("the", "").Replace(":", "") + "%'");
+                string Search = searchTextBox.Text.ToLower();
+                if (Search.StartsWith("$"))
+                {
+                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '" + searchTextBox.Text.Replace("$", "") + "'");
+                }
+                else
+                {
+                    Search = RemoveSpecialCharacters(searchTextBox.Text.ToLower());
+                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace(" and ", "").Replace(" & ", "").Replace(":", "") + "%'");
+                }
+                dataGridView1.ClearSelection();
+                dataGridView1.DefaultCellStyle.SelectionBackColor = dataGridView1.DefaultCellStyle.BackColor;
+                dataGridView1.DefaultCellStyle.SelectionForeColor = dataGridView1.DefaultCellStyle.ForeColor;
+                dataGridView1.Columns[0].SortMode = DataGridViewColumnSortMode.NotSortable;
+                dataGridView1.Columns[1].SortMode = DataGridViewColumnSortMode.NotSortable;
+
             }
             catch { }
         }
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
-            File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+            if (VRLExists)
+            {
+                string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
+                File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
+            }
             Clipboard.SetText(dataGridView1[1, CurrentCell].Value.ToString());
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/harryeffinpotter/SteamAPPIDFinder");
+        }
+
+        private void dataGridView1_Enter(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.SpringGreen;
+                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+                dataGridView1.Rows[0].Selected = true;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void searchTextBox_Enter(object sender, EventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            dataGridView1.DefaultCellStyle.SelectionBackColor = dataGridView1.DefaultCellStyle.BackColor;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = dataGridView1.DefaultCellStyle.ForeColor;
+        }
+
+        private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
         }
     }
 }
