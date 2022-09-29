@@ -292,25 +292,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_bin\ALI213\SteamConfig.ini">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Gberg.bat">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Goldberg\job_id">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="_bin\achievements_parser.exe" />
+    <None Include="_bin\ALI213\inifile.exe" />
+    <None Include="_bin\ALI213\SteamConfig.ini" />
+    <None Include="_bin\ALI213\steam_api.dll" />
+    <None Include="_bin\ALI213\steam_api64.dll" />
+    <None Include="_bin\curl\curl-ca-bundle.crt" />
+    <None Include="_bin\Gberg.bat" />
+    <None Include="_bin\generate_game_infos.exe" />
+    <None Include="_bin\Goldberg\generate_interfaces_file.exe" />
+    <None Include="_bin\Goldberg\job_id" />
+    <None Include="_bin\Goldberg\steam_api.dll" />
+    <None Include="_bin\Goldberg\steam_api64.dll" />
+    <None Include="_bin\libcurl.dll" />
+    <None Include="_bin\libgcc_s_dw2-1.dll" />
+    <None Include="_bin\libstdc++-6.dll" />
     <None Include="_bin\Steamless.ver" />
-    <None Include="_bin\Steamless\ExamplePlugin.7z">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Steamless.CLI.exe.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Steamless.exe.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="_bin\Steamless\ExamplePlugin.7z" />
+    <None Include="_bin\Steamless\Plugins\ExamplePlugin.dll" />
+    <None Include="_bin\Steamless\Plugins\SharpDisasm.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.API.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant10.x86.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant20.x86.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant21.x86.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x64.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x86.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x64.dll" />
+    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x86.dll" />
+    <None Include="_bin\Steamless\Steamless.CLI.exe" />
+    <None Include="_bin\Steamless\Steamless.CLI.exe.config" />
+    <None Include="_bin\Steamless\Steamless.exe" />
+    <None Include="_bin\Steamless\Steamless.exe.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -329,95 +341,28 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="_bin\Goldberg\Example\steam_settings.EXAMPLE\controller.EXAMPLE\glyphs\" />
+    <Folder Include="_bin\Goldberg\Example\steam_settings.EXAMPLE\mods.EXAMPLE\12345\" />
+    <Folder Include="_bin\Goldberg\steam_settings\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="_bin\achievements_parser.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="_bin\add.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="_bin\ALI213\inifile.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\ALI213\steam_api.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\ALI213\steam_api64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="_bin\clickadd.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="_bin\clickr2c.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="_bin\generate_game_infos.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Goldberg\generate_interfaces_file.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Goldberg\steam_api.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Goldberg\steam_api64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="_bin\hoveradd.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="_bin\hoverr2c.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="_bin\libcurl.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\libgcc_s_dw2-1.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\libstdc++-6.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="_bin\r2c.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="_bin\Steamless\Plugins\ExamplePlugin.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\SharpDisasm.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.API.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant10.x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant20.x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant21.x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x86.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Steamless.CLI.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="_bin\Steamless\Steamless.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Content Include="_bin\7z\7za.dll" />
+    <Content Include="_bin\7z\7za.exe" />
+    <Content Include="_bin\7z\7zxa.dll" />
+    <Content Include="_bin\7z\history.txt" />
+    <Content Include="_bin\7z\License.txt" />
+    <Content Include="_bin\7z\readme.txt" />
+    <Content Include="_bin\add.png" />
+    <Content Include="_bin\APPID\APPID.exe" />
+    <Content Include="_bin\APPID\Newtonsoft.Json.dll" />
+    <Content Include="_bin\clickadd.png" />
+    <Content Include="_bin\clickr2c.png" />
+    <Content Include="_bin\curl\curl.exe" />
+    <Content Include="_bin\curl\libcurl.def" />
+    <Content Include="_bin\curl\libcurl.dll" />
+    <Content Include="_bin\hoveradd.png" />
+    <Content Include="_bin\hoverr2c.png" />
+    <Content Include="_bin\r2c.png" />
     <EmbeddedResource Include="Costura.Fody.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
