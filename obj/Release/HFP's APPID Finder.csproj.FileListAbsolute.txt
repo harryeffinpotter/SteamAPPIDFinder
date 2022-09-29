@@ -1,13 +1,62 @@
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Costura.Fody.dll
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\APPID.exe.config
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\APPID.exe
-C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.dll
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Newtonsoft.Json.xml
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.AssemblyReference.cache
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
-C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\SteamAppIdIdentifier.SteamAppId.resources
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\APPID.Properties.Resources.resources
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.GenerateResource.cache
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CoreCompileInputs.cache
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.CopyComplete
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\APPID.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\APPID.SteamAppId.resources
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\CliWrap.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\Octokit.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\RestSharp.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Buffers.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Memory.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Net.Http.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Numerics.Vectors.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Text.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\System.ValueTuple.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Release\HFP's APPID Finder.csproj.Fody.CopyLocal.cache
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\add.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\clickadd.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\clickr2c.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\hoveradd.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\hoverr2c.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\r2c.png
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\ALI213\SteamConfig.ini
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Gberg.bat
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Goldberg\job_id
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\ExamplePlugin.7z
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Steamless.CLI.exe.config
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Steamless.exe.config
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\achievements_parser.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\ALI213\inifile.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\ALI213\steam_api.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\ALI213\steam_api64.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\generate_game_infos.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Goldberg\generate_interfaces_file.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Goldberg\steam_api.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Goldberg\steam_api64.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\libcurl.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\libgcc_s_dw2-1.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\libstdc++-6.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\ExamplePlugin.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\SharpDisasm.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.API.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant10.x86.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant20.x86.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant21.x86.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x64.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant30.x86.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x64.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Plugins\Steamless.Unpacker.Variant31.x86.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Steamless.CLI.exe
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Release\_bin\Steamless\Steamless.exe

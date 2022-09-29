@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using APPID;
 
 namespace SteamAppIdIdentifier
 {
@@ -37,7 +38,7 @@ namespace SteamAppIdIdentifier
                 Application.Run(form);
                 Application.Exit();
             }
-            catch { }
+            catch (Exception ex){ MessageBox.Show(ex.Message); }
         }
     }
 }
