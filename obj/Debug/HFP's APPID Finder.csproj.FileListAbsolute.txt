@@ -2,8 +2,28 @@ C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Costura.Fody.dll
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.exe.config
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.exe
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\APPID.pdb
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\RestSharp.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Buffers.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Memory.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Text.Json.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.ValueTuple.dll
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\RestSharp.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Buffers.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Memory.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Text.Json.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\System.ValueTuple.xml
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.AssemblyReference.cache
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.SuggestedBindingRedirects.cache
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\SteamAppIdIdentifier.SteamAppId.resources
@@ -13,4 +33,3 @@ C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.C
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\HFP's APPID Finder.csproj.CopyComplete
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\APPID.exe
 C:\Users\YSG\source\repos\SteamAPPIDFinder\obj\Debug\APPID.pdb
-C:\Users\YSG\source\repos\SteamAPPIDFinder\bin\Debug\Gma.System.MouseKeyHook.dll

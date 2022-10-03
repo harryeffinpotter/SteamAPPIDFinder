@@ -9,8 +9,9 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using APPID;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace SteamAppIdIdentifier
 {
@@ -58,7 +59,10 @@ namespace SteamAppIdIdentifier
                 try
                 {
                     string Search = RemoveSpecialCharacters(args2.ToLower());
-                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace(" ", "%' AND Name LIKE '%").Replace(" and ", " ").Replace(" the ", " ").Replace(":", "") + "%'"); if (dataGridView1.Rows[0].Cells[1].Value.ToString() != null)
+                    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = String.Format("Name like '%" + Search.Replace
+                        (" ", "%' AND Name LIKE '%").Replace(" and ", " ").Replace(" the ", " ").Replace
+                        (":", "") + "%'"); if (dataGridView1.Rows[0].Cells[1].Value.ToString() != null)
+
                         if (!String.IsNullOrEmpty(dataGridView1.Rows[0].Cells[1].Value.ToString()))
                             Clipboard.SetText($"{dataGridView1.Rows[0].Cells[1].Value.ToString()}");
                     if (String.IsNullOrWhiteSpace(dataGridView1.Rows[0].Cells[1].Value.ToString()))
@@ -66,7 +70,6 @@ namespace SteamAppIdIdentifier
                         dataTableGeneration = new DataTableGeneration();
                         Task.Run(async () => await dataTableGeneration.GetDataTableAsync(dataTableGeneration)).Wait();
                         dataGridView1.DataSource = dataTableGeneration.DataTableToGenerate;
-
                     }
                 }
                 catch { }
@@ -97,13 +100,7 @@ namespace SteamAppIdIdentifier
                 if (dataGridView1.SelectedCells.Count > 0)
                 {
                     Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
-                    if (VRLExists)
-                    {
-                        string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString()).Trim();
-                        File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
-                    }
                     label3.Text = $"{dataGridView1[1, e.RowIndex].Value.ToString()} ({dataGridView1[0, e.RowIndex].Value.ToString()}) copied to clipboard.";
-                    CurrentCell = e.RowIndex;
                 }
             }
             catch { }
@@ -119,18 +116,17 @@ namespace SteamAppIdIdentifier
             }
             try
             {
-                if (VRLExists)
-                {
-                    string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
-                    File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
-                }
-                Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
-                this.Close();
+                SetAPPID(dataGridView1[0, e.RowIndex].Value.ToString());
             }
             catch { }
 
         }
 
+        public void SetAPPID(string APPID)
+        {
+            Clipboard.SetText(APPID);
+
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -140,7 +136,7 @@ namespace SteamAppIdIdentifier
                     string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
                     File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
                 }
-                Clipboard.SetText(dataGridView1[1, e.RowIndex].Value.ToString());
+                SetAPPID(dataGridView1[1, e.RowIndex].Value.ToString());
             }
             catch
             {
@@ -183,13 +179,7 @@ namespace SteamAppIdIdentifier
                     {
                         return;
                     }
-                    if (VRLExists)
-                    {
-                        string PropName = RemoveSpecialCharacters(dataGridView1[0, CurrentCell].Value.ToString());
-                        File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
-                    }
-                    Clipboard.SetText(dataGridView1[1, CurrentCell].Value.ToString());
-                    this.Close();
+                    SetAPPID(dataGridView1[1, CurrentCell].Value.ToString());
                 }
                 else if (e.KeyCode == Keys.Back)
                 {
@@ -343,13 +333,7 @@ namespace SteamAppIdIdentifier
         }
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (VRLExists)
-            {
-                string PropName = RemoveSpecialCharacters(dataGridView1[0, e.RowIndex].Value.ToString());
-                File.WriteAllText($"{APPDATA}\\VRL\\ProperName.txt", PropName);
-            }
-            Clipboard.SetText(dataGridView1[1, CurrentCell].Value.ToString());
-            this.Close();
+            SetAPPID(dataGridView1[1, CurrentCell].Value.ToString());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

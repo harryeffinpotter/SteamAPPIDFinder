@@ -1,0 +1,2 @@
+[DLC]
+801860=Deep Rock Galactic - Supporter Upgrade802640=Deep Rock Galactic - Original Soundtrack Volume I + II1283090=Deep Rock Galactic - Dark Future Pack1283091=Deep Rock Galactic - MegaCorp Pack1430610=Deep Rock Galactic - Roughneck Pack1530640=Deep Rock Galactic - Dawn of the Dread Pack1797340=Deep Rock Galactic - Rival Tech Pack1946960=Deep Rock Galactic - Robot Rebellion Pack

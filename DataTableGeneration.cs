@@ -1,5 +1,6 @@
 ﻿
 using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,21 +10,20 @@ using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using APPID;
 
 namespace SteamAppIdIdentifier
 {
     public class DataTableGeneration
     {
+
         public static DataTable dataTable;
         public static DataTable dt;
 
         public DataTableGeneration() { }
-        public static string RemoveSpecialCharacters(string str)
+
+        public async Task<DataTable> GetDataTableAsync(DataTableGeneration dataTableGeneration)
         {
-            str = str.Replace(":", " -").Replace("'", "").Replace("&", "and");
-            return Regex.Replace(str, "[^a-zA-Z0-9._0 -]+", "", RegexOptions.Compiled);
-        }
-        public async Task<DataTable> GetDataTableAsync(DataTableGeneration dataTableGeneration) {
             HttpClient httpClient = new HttpClient();
             string content = await httpClient.GetStringAsync("https://api.steampowered.com/ISteamApps/GetAppList/v2/");
             SteamGames steamGames = JsonConvert.DeserializeObject<SteamGames>(content);
@@ -34,14 +34,19 @@ namespace SteamAppIdIdentifier
 
             foreach (var item in steamGames.Applist.Apps)
             {
-                string ItemWithoutTroubles = RemoveSpecialCharacters(item.Name);
-                dt.Rows.Add(ItemWithoutTroubles, item.Appid);
-            }
+                string ItemWithoutTroubles = item.Name;
+                string type = await DLCIds.getTypeAsync(item.Appid.ToString());
+                if (type != "dlc")
+                {
+                    dt.Rows.Add(ItemWithoutTroubles, item.Appid);
+                    dataTableGeneration.DataTableToGenerate = dt;
+                }
 
-            dataTableGeneration.DataTableToGenerate = dt;
+   
+                
+            }
             return dt;
         }
-
         #region Get and Set
         public DataTable DataTableToGenerate{
             get { return dataTable; }   // get method
