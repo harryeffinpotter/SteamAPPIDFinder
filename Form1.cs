@@ -12,7 +12,6 @@ using System.Windows.Forms;
 using APPID;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
 namespace SteamAppIdIdentifier
 {
     public partial class SteamAppId : Form
@@ -125,7 +124,8 @@ namespace SteamAppIdIdentifier
         public void SetAPPID(string APPID)
         {
             Clipboard.SetText(APPID);
-
+            string dol= DLCIds.DLC(APPID);
+            MessageBox.Show(dol);
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

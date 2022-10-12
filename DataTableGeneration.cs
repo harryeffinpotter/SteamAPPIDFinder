@@ -35,15 +35,8 @@ namespace SteamAppIdIdentifier
             foreach (var item in steamGames.Applist.Apps)
             {
                 string ItemWithoutTroubles = item.Name;
-                string type = await DLCIds.getTypeAsync(item.Appid.ToString());
-                if (type != "dlc")
-                {
-                    dt.Rows.Add(ItemWithoutTroubles, item.Appid);
-                    dataTableGeneration.DataTableToGenerate = dt;
-                }
-
-   
-                
+                dt.Rows.Add(ItemWithoutTroubles, item.Appid);
+                dataTableGeneration.DataTableToGenerate = dt;   
             }
             return dt;
         }
